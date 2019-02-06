@@ -24,6 +24,9 @@ function CustomInput({ ...props }) {
     success
   } = props;
 
+  function test() {
+    alert("gfhjrek");
+  }
   const labelClasses = classNames({
     [" " + classes.labelRootError]: error,
     [" " + classes.labelRootSuccess]: success && !error
@@ -58,6 +61,7 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         {...inputProps}
+        onChange={e => test(e)}
       />
       {error ? (
         <Clear className={classes.feedback + " " + classes.labelRootError} />

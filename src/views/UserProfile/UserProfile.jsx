@@ -33,11 +33,12 @@ const styles = {
     textDecoration: "none"
   }
 };
-function handle() {
- console.log('fsf');
- alert('e');
-}
+
 function UserProfile(props) {
+  function handle() {
+    console.log('fsf');
+    alert('e');
+   }
   const { classes } = props;
   return (
     <div>
@@ -60,7 +61,6 @@ function UserProfile(props) {
                     inputProps={{
                       disabled: true
                     }}
-
                   />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={3}>
